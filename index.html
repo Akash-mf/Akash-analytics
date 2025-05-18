@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Analytics</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #2d2d2d; color: white; padding: 1rem; text-align: center; }
+    nav { background-color: #444; display: flex; justify-content: center; }
+    nav a { color: white; padding: 1rem; text-decoration: none; }
+    nav a:hover { background-color: #666; }
+    .container { padding: 2rem; }
+    .bio-image { display: flex; align-items: center; gap: 2rem; }
+    .bio-image img { width: 150px; height: 150px; border-radius: 10px; }
+    .logos img { height: 40px; margin: 0.5rem; }
+    .course-logos img { height: 60px; cursor: pointer; margin: 1rem; }
+    .syllabus { margin-top: 2rem; display: none; }
+    footer { background-color: #2d2d2d; color: white; text-align: center; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Akash Analytics</h1>
+    <p>Your gateway to mastering Data Analytics</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#course">Course</a>
+    <a href="#service">Service</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <div class="container" id="home">
+    <div class="bio-image">
+      <img src="linkedin1.jpeg" alt="Akash Profile" />
+      <div>
+        <h2>About Me</h2>
+<p>
+  I'm <strong>Akash</strong>, a data analytics professional with a deep passion for teaching and empowering beginners. I specialize in <strong>SQL, Python, Excel, Power BI, and Data Visualization</strong>. Data skills are the key to unlocking better career opportunities and smarter decision-making.
+</p>
+
+<p>
+  My journey started just like many of yours – with curiosity, limited resources, and a strong desire to grow. I completed my <strong>Master's in Computer Application from Anna University</strong> and gained valuable hands-on experience during my time at <strong>Binare IT Solution, Chennai</strong>.
+</p>
+
+<p>
+  I know what it's like to feel lost in the world of data. That’s why I’ve built <strong>Akash Analytics</strong> – an online learning platform designed to take you from zero to confident data analyst with <strong>real-world projects and personal mentorship</strong>.
+</p>
+        <!-- Enroll Now button that links to the form -->
+        <a href="enroll.html"> 
+        <button style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+       Enroll Now
+       </button>
+       </a>
+      
+      </div>
+    </div>
+    <h3>Our Focus</h3>
+    <div class="logos">
+      <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python"/>
+      <img src="https://img.icons8.com/color/48/sql.png" alt="SQL"/>
+      <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI"/>
+      <img src="https://img.icons8.com/color/48/microsoft-excel-2019.png" alt="Microsoft Excel"/>
+      <img src="https://img.icons8.com/color/48/statistics.png" alt="Statistical Analysis"/>
+      
+    </div>
+  </div>
+
+  <div class="container" id="course">
+    <h2>Courses Offered</h2>
+    <div class="course-logos">
+      <img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" onclick="showSyllabus('python')"/>
+      <img src="https://img.icons8.com/color/96/sql.png" alt="SQL" onclick="showSyllabus('sql')"/>
+      <img src="https://img.icons8.com/color/96/power-bi.png" alt="Power BI" onclick="showSyllabus('powerbi')"/>
+      <img src="https://img.icons8.com/color/48/microsoft-excel-2019.png" onclick="showSyllabus('excel')"/>
+      <img src="https://img.icons8.com/color/96/database.png" alt="Snowflake" onclick="showSyllabus('snowflake')"/>
+    </div>
+
+    <div class="syllabus" id="python">
+      <h3>Python Syllabus (1 Month)</h3>
+      <ul>
+        <li>Week 1: Python Basics, Data Types, Operators</li>
+        <li>Week 2: Functions, Loops, Conditions</li>
+        <li>Week 3: Pandas, NumPy for Data Manipulation</li>
+        <li>Week 4: Real-world Projects</li>
+      </ul>
+    </div>
+    <div class="syllabus" id="sql">
+      <h3>SQL Syllabus (1 Month)</h3>
+      <ul>
+        <li>Week 1: SQL Basics, SELECT, WHERE, JOIN</li>
+        <li>Week 2: Aggregation, GROUP BY, Subqueries</li>
+        <li>Week 3: Views, Indexes, Stored Procedures</li>
+        <li>Week 4: Real-world Queries & Projects</li>
+      </ul>
+    </div>
+    <div class="syllabus" id="powerbi">
+      <h3>Power BI Syllabus (1 Month)</h3>
+      <ul>
+        <li>Week 1: Introduction, Power BI Interface</li>
+        <li>Week 2: Data Import, Transformations (Power Query)</li>
+        <li>Week 3: DAX, Calculated Columns & Measures</li>
+        <li>Week 4: Dashboard Design & Publishing</li>
+      </ul>
+    </div>
+    <div class="syllabus" id="excel">
+      <h3>Excel Syllabus (1 Month)</h3>
+      <ul>
+        <li>Week 1: Basic Excel, Formulas & Functions</li>
+        <li>Week 2: Charts, Pivot Tables, Conditional Formatting</li>
+        <li>Week 3: Excel Dashboards, Data Validation</li>
+        <li>Week 4: Real-world Excel Projects</li>
+      </ul>
+    </div>
+    <div class="syllabus" id="snowflake">
+      <h3>Snowflake Syllabus (1 Month)</h3>
+      <ul>
+        <li>Week 1: Introduction to Cloud Data Warehousing</li>
+        <li>Week 2: Snowflake Architecture, Data Loading</li>
+        <li>Week 3: Querying, Cloning, Time Travel</li>
+        <li>Week 4: Hands-on Project in Snowflake</li>
+      </ul>
+    </div>
+    <h4>Total Duration: 4 Months with Real-time Projects</h4>
+  </div>
+
+  <div class="container" id="service">
+    <h2>Services</h2>
+    <ul>
+      <li>Courses & Mentoring</li>
+      <li>I offer beginner-friendly courses in SQL, Python for Analytics, and Dashboard Building.</li>
+      <li>Join my next live workshop or Book 1-on-1 mentoring</li>
+    </ul>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> akash.analytics@gmail.com</p>
+    <p><strong>LinkedIn:</strong> Akash Analytics</p>
+    <p><strong>WhatsApp: </strong> +91-8610117802</p>
+    <p><strong>Instagram: </strong> Akash Analytics</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Akash Analytics. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showSyllabus(id) {
+      document.querySelectorAll('.syllabus').forEach(el => el.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
